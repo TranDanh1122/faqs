@@ -101,6 +101,7 @@ main {
     align-items: center;
     cursor: pointer;
     gap: .5rem;
+    font-size: 1.125rem;
 }
 
 .faq .desc {
