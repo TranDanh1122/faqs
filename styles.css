@@ -94,21 +94,41 @@ main {
     gap: 1.5rem;
 }
 
+
 .faq h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    gap: .5rem;
+}
+
+.faq .desc {
+    display: none;
+    color: var(--grayish_purple);
+    line-height: 150%;
+}
+
+.faq[explode] .desc {
+    display: block;
 }
 
 .faq h2:hover {
     color: var(--pink);
 }
 
-.faq h2 img {
-    width: 2.5rem;
+.faq .img_box {
+    min-width: 2.5rem;
+    max-width: 2.5rem;;
     height: 2.5rem;
-    object-fit: cover;
+    background-image: url(./assets/images/icon-plus.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.faq[explode] .img_box {
+    background-image: url(./assets/images/icon-minus.svg);
 }
 
 @media (max-width:1024px) {
